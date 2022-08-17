@@ -1,12 +1,9 @@
-function checkAge(age) {
-  if (age >= 18) {
-    // Change this line
-    return 'You are an adult';
-  }
+const apartment = {
+  imgUrl: 'https://via.placeholder.com/640x480',
+  descr: 'Spacious apartment in the city center',
+  rating: 4,
+  price: 2153,
+  tags: ['premium', 'promoted', 'top'],
+};
 
-  return 'You are a minor';
-}
-console.log(checkAge(20));
-console.log(checkAge(8));
-console.log(checkAge(14));
-console.log(checkAge(38));
+console.table(apartment);

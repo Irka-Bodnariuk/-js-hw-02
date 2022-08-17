@@ -1,13 +1,14 @@
-function makeStringFromArray(array, delimeter) {
-  let string;
+function countProps(object) {
+  let propCount = 0;
   // Change code below this line
-  string = array.join(delimeter);
-  // Change code above this line
-  return string;
-}
+  for (const key in object) {
+    if (object.hasOwnProperty(key)) {
+      propCount += 1;
+    }
+  }
 
-console.log(
-  makeStringFromArray(['Mango', 'hurries', 'to', 'the', 'train'], ' ')
-);
-console.log(makeStringFromArray(['M', 'a', 'n', 'g', 'o'], ''));
-console.log(makeStringFromArray(['top', 'picks', 'for', 'you'], '_'));
+  // Change code above this line
+  return propCount;
+}
+console.log(countProps({ name: 'Mango', age: 2 }));
+console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 }));

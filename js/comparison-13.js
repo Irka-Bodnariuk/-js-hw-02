@@ -1,10 +1,12 @@
-function slugify(title) {
-  // Change code below this line
-  // const slug =
-
-  return title.toLowerCase().split(' ').join('-');
-
-  // Change code above this line
+const apartment = {
+  descr: 'Spacious apartment in the city center',
+  rating: 4,
+  price: 2153,
+};
+const values = [];
+// Change code below this line
+const keys = Object.keys(apartment);
+for (const key of keys) {
+  values.push(apartment[key]);
 }
-console.log(slugify('Arrays for begginers'));
-console.log(slugify('English for developer'));
+console.log(values);

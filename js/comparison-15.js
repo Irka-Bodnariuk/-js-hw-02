@@ -1,5 +1,8 @@
-const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
-const newClients = ['Peach', 'Houston'];
-
-const allClients = oldClients.concat(newClients);
-console.log(allClients); // Change this line
+const apartment = {
+  descr: 'Spacious apartment in the city center',
+  rating: 4,
+  price: 2153,
+};
+// Change code below this line
+const keys = apartment;
+const values = apartment;
