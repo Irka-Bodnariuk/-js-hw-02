@@ -1,10 +1,11 @@
-function calculateTotal(number) {
+const products = [
+  { name: 'Radar', price: 1300, quantity: 4 },
+  { name: 'Scanner', price: 2700, quantity: 3 },
+  { name: 'Droid', price: 400, quantity: 7 },
+  { name: 'Grip', price: 1200, quantity: 9 },
+];
+
+function getProductPrice(productName) {
   // Change code below this line
-  let add = 0;
-  for (let i = 0; i <= number; i += 1) {
-    add += i;
-  }
-  return add;
   // Change code above this line
 }
-console.log(calculateTotal(3));
