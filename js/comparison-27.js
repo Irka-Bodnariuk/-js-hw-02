@@ -1,22 +1,6 @@
-function filterArray(numbers, value) {
-  // Change code below this line
-  const filteredNumbers = [];
-
-  // for (let i = 0; i < numbers.length; i += 1) {
-  //   const number = numbers[i];
-
-  //   if (number > value) {
-  //     filteredNumbers.push(number);
-  //   }
-  // }
-  for (const number of numbers) {
-    if (number > value) {
-      filteredNumbers.push(number);
-    }
-  }
-
-  return filteredNumbers;
-  // Change code above this line
-}
-console.log(filterArray([1, 2, 3, 4, 5], 3));
-console.log(filterArray([1, 2, 3, 4, 5], 4));
+const scores = [89, 64, 42, 17, 93, 51, 26];
+// Change code below this line
+const bestScore = Math.max(...scores);
+const worstScore = Math.min(...scores);
+console.log(bestScore);
+console.log(worstScore);

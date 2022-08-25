@@ -1,11 +1,20 @@
-const start = 6;
-const end = 27;
-let number;
-
-for (let i = start; i < end; i += 1) {
-  if (i % 5 === 0) {
-    number = i;
-    break;
-  }
+function makeTask(data) {
+  const completed = false;
+  const category = 'General';
+  const priority = 'Normal';
+  // Change code below this line
+  const updatedTask = { completed, category, priority, ...data };
+  return updatedTask;
+  // Change code above this line
 }
-console.log(number);
+console.log(makeTask({}));
+// console.log(
+//   makeTask({
+//     category: 'Homemade',
+//     priority: 'Low',
+//     text: 'Take out the trash',
+//   })
+// );
+console.log(makeTask({ category: 'Finance', text: 'Take interest' }));
+console.log(makeTask({ priority: 'Low', text: 'Choose shampoo' }));
+console.log(makeTask({ text: 'Buy bread' }));

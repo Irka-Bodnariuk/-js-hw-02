@@ -1,8 +1,14 @@
+const firstGroupScores = [64, 42, 93];
+const secondGroupScores = [89, 14, 51, 26];
+const thirdGroupScores = [29, 47, 18, 97, 81];
 // Change code below this line
-const a = 3 % 1;
-const b = 4 % 3;
-const c = 11 % 4;
-const d = 12 % 7;
-const e = 8 % 6;
-
-console.log(a, b, c, d, e);
+const allScores = [
+  ...firstGroupScores,
+  ...secondGroupScores,
+  ...thirdGroupScores,
+];
+const bestScore = Math.max(...allScores);
+const worstScore = Math.min(...allScores);
+console.log(allScores);
+console.log(bestScore);
+console.log(worstScore);

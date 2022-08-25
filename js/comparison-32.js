@@ -1,11 +1,17 @@
-function includes(array, value) {
-  // Change code below this line
-  for (const num of array) {
-    if (num === value) {
-      return true;
+// Change code below this line
+function addOverNum(num, ...args) {
+  let total = 0;
+
+  for (const arg of args) {
+    if (num < arg) {
+      total += arg;
     }
   }
-  return false;
+
+  return total;
   // Change code above this line
 }
-console.log(includes([1, 2, 3, 4, 5], 3));
+console.log(addOverNum(50, 15, 27));
+console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+console.log(addOverNum(15, 32, 6, 13, 19, 8));
+console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));

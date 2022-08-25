@@ -6,6 +6,19 @@ const products = [
 ];
 
 function getProductPrice(productName) {
+  for (const product of products) {
+    if (product.name === productName) {
+      return product.price;
+    }
+  }
+
   // Change code below this line
   // Change code above this line
+  return null;
 }
+
+console.log(getProductPrice('Radar'));
+console.log(getProductPrice('Grip'));
+console.log(getProductPrice('Scanner'));
+console.log(getProductPrice('Droid'));
+console.log(getProductPrice('Engine'));
